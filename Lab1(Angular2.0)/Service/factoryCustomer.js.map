@@ -1,0 +1,1 @@
+{"version":3,"file":"FactoryCustomer.js","sourceRoot":"","sources":["FactoryCustomer.ts"],"names":[],"mappings":";;;;;;;;AAAA,gDAA6C;AAC7C,gDAAyC;AACzC,wCAA0C;AAG1C,IAAa,eAAe,GAA5B;IACW,MAAM,CAAC,cAAc;QACxB,IAAI,cAAc,IAAI,UAAU,EAAE;YAC9B,OAAO,IAAI,mBAAQ,CAAC;SACvB;aAAM;YACH,OAAO,IAAI,eAAI,CAAC;SACnB;IACL,CAAC;CAEJ,CAAA;AATY,eAAe;IAD3B,iBAAU,EAAE;GACA,eAAe,CAS3B;AATY,0CAAe"}

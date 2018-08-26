@@ -1,0 +1,20 @@
+﻿<b>Hello</b>
+
+<p>
+    Dispalying Data {{entityName}}
+</p>
+<table>
+    <tr>
+        <th *ngFor="let colName of gridColumns ">
+            {{colName}}
+        </th>
+    </tr>
+    <tr *ngFor="let colObj of gridData">
+        <td *ngFor="let colName of gridColumns">
+            {{colObj[colName]}}
+        </td>
+
+        <td> <a herf="#" (click)="Select(colObj)">Select</a> </td>
+
+    </tr>
+</table>

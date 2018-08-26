@@ -3,3 +3,11 @@
 ################################################################################
 
 /CustomerAPI/bin
+/CustomerAPI/obj/Debug
+/.vs/Lab1(Angular2.0)/v15
+/.vs/Lab1(Angular2.0)/v14
+/.vs/Lab1(Angular2.0)/DesignTimeBuild
+/Lab1(Angular2.0)/bin
+/Lab1(Angular2.0)/node_modules
+/Lab1(Angular2.0)/obj/Debug
+/packages

@@ -1,0 +1,37 @@
+﻿<form [formGroup]="currentCustomer.CustomerGroupValidator" >
+    <div>
+
+        <!--Customer Name Object to ui :-<input [ngModel]="customerobj.CustomerName" id="Text1" type="text"/> <br /> <br />
+        Customer Name UI to Object :-<input (input)="customerobj.CustomerName=$event.target.value" id="Text1" type="text"/><br /> <br />
+        Customer Name 2 way binding :-<input [ngModel]="customerobj.CustomerName" (input)="customerobj.CustomerName=$event.target.value" id="Text1" type="text"/><br /> <br />-->
+        Customer Type : <select [ngModelOptions]="{standalone:true}" [(ngModel)]="CustomerType" (ngModelChange)="onChangeOfCustomerType($event)">
+            <option value="Customer">Cutomer</option>
+            <option value="Lead">Lead</option>
+        </select>
+        Customer Name :-<input formControlName="CustomerName" [(ngModel)]="currentCustomer.CustomerName" id="Text1" type="text" />
+        <div  *ngIf="!(currentCustomer.IsDirty('CustomerName','required')==true)" 
+             [hidden]="currentCustomer.IsValid('CustomerName','required')">Customer Name is required</div>
+        <br />
+        Customer Code :-<input formControlName="CustomerCode" [(ngModel)]="currentCustomer.CustomerCode" id="Text1" type="text" />
+        <div *ngIf="!(currentCustomer.IsDirty('CustomerCode','required')==true)"  [hidden]="currentCustomer.IsValid('CustomerCode','required')">Customer code is required</div>
+        <div [hidden]="currentCustomer.IsValid('CustomerCode','pattern')"> Customer Code should be X1010 or M1010</div>
+        <br />
+        Customer Amount :-<input formControlName="CustomerAmount"  [(ngModel)]="currentCustomer.CustomerAmount" id="Text1" type="text" />
+        <div *ngIf="!(currentCustomer.IsDirty('CustomerAmount','required')==true)" [hidden]="currentCustomer.IsValid('CustomerAmount','required')" > Customer Amount is required</div>
+        <br /> <b> {{currentCustomer.CustomerName}} </b><br />
+        {{currentCustomer.CustomerCode}}<br />
+        {{currentCustomer.CustomerAmount}}<br />
+        <input type="button" (click)="Add()" [disabled]="!(currentCustomer.IsValid('',''))" value="Add Customer" />
+        <input type="button" (click)="Update()" value="Update Customer" />
+        <input type="button" (click)="Clear()" value="Cancel" />
+        <input type="button" (click)="Submit()" value="Submits"/>
+
+        <grid-ui [grid-data]="customers"
+                 [grid-entityName]="'Customer'"
+                 (grid-selected)="Select($event)">
+
+        </grid-ui>
+
+    </div>
+
+</form>
