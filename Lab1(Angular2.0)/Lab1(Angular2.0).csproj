@@ -69,7 +69,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Binder\GridComponent.js" />
+    <Content Include="Components\GridComponent.js" />
     <Content Include="systemjs.config.js" />
     <Content Include="packages.config" />
     <Content Include="tsconfig.json" />
@@ -95,14 +95,20 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <TypeScriptCompile Include="Binder\CustomerComponent.ts" />
-    <TypeScriptCompile Include="Binder\MainModuleLibrary.ts" />
-    <TypeScriptCompile Include="Binder\GridComponent.ts" />
-    <TypeScriptCompile Include="Binder\MasterPageComponent.ts" />
-    <TypeScriptCompile Include="Binder\Routing.ts" />
-    <TypeScriptCompile Include="Binder\Startup.ts" />
-    <TypeScriptCompile Include="Binder\SupplierComponent.ts" />
+    <TypeScriptCompile Include="Components\CustomerComponent.ts" />
+    <TypeScriptCompile Include="Components\MainModuleLibrary.ts" />
+    <TypeScriptCompile Include="Components\GridComponent.ts" />
+    <TypeScriptCompile Include="Components\MasterPageComponent.ts" />
+    <TypeScriptCompile Include="Routing\CustomerRouting.ts" />
+    <TypeScriptCompile Include="Routing\SupplierRouting.ts" />
+    <TypeScriptCompile Include="Routing\MainRouting.ts" />
+    <TypeScriptCompile Include="Startup\Startup.ts" />
+    <TypeScriptCompile Include="Components\SupplierComponent.ts" />
+    <TypeScriptCompile Include="Components\WelcomeComponent.ts" />
     <TypeScriptCompile Include="Model\Customer.ts" />
+    <TypeScriptCompile Include="Modules\CustomerModule.ts" />
+    <TypeScriptCompile Include="Modules\SupplierModule.ts" />
+    <TypeScriptCompile Include="Modules\MainModule.ts" />
     <TypeScriptCompile Include="Service\factoryCustomer.ts" />
   </ItemGroup>
   <ItemGroup>

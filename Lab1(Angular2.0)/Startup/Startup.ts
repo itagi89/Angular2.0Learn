@@ -1,4 +1,4 @@
 ﻿import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { MainModuleLibrary } from '../Binder/MainModuleLibrary';
+import { MainModule } from '../Modules/MainModule';
 const platform = platformBrowserDynamic();
-platform.bootstrapModule(MainModuleLibrary);
+platform.bootstrapModule(MainModule);
